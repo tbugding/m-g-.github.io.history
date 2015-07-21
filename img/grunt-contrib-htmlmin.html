@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://www.npmjs.com/package/grunt-contrib-htmlmin -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; cursor: default }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; }
+#powered-by-constructor-io { font-size: 0.8em; text-align:right; background-color:rgb(255,255,192); font-family:sans-serif; padding: 4px }
+.autocomplete-suggestion-image { float:left; padding-right: 10px }
+#autocomplete-direct-results:before { content:'Products' }
+#autocomplete-search-suggestions:before { content:'Search Suggestions' }</style>
+  <title>grunt-contrib-htmlmin</title>
+
+    <meta name="description" content="Minify HTML">
+    <meta name="keywords" content="optimize,compress,minify,min,html,gruntplugin">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/grunt-contrib-htmlmin">
+    <meta name="twitter:title" content="npm: grunt-contrib-htmlmin">
+    <meta name="twitter:description" content="Minify HTML">
+
+  <meta charset="utf-8">
+  <meta http-equiv="cleartype" content="on">
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="description" content="npm is the package manager for javascript">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="https://www.npmjs.com/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+  <link rel="canonical" href="./grunt-contrib-htmlmin_files/grunt-contrib-htmlmin.html">
+  <link rel="stylesheet" media="all" href="https://www.npmjs.com/static/css/index.css">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
+
+  <script id="hs-analytics" src="./grunt-contrib-htmlmin_files/419727.js"></script><script async="" src="./grunt-contrib-htmlmin_files/analytics.js"></script><script defer="" src="./grunt-contrib-htmlmin_files/index.js"></script>
+  <script defer="" src="./grunt-contrib-htmlmin_files/vendor.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="fPTWFE1m52KLWTN478wf5r_jYqQzATCT4ZY6X3fBpt1">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+  <div id="notification-banner" style="">
+    <div class="container">
+      <hgroup>
+        <a href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-banner-signup-via-wombat">
+          <img src="./grunt-contrib-htmlmin_files/wombat-by-night.svg" alt="night wombat">
+        </a>
+        <h2>private npm is here.</h2>
+        <h3>publish unlimited private modules for just $7/month</h3>
+      </hgroup>
+      <a class="button" href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-banner-signup">sign up</a>
+      <a class="button button-subtle banner-close" data-event-trigger="click" data-event-name="private-modules-banner-no-thanks">no thanks</a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#" id="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Nonstop Progressive Marxism</a>
+      <a href="https://www.npmjs.com/private-modules" data-event-trigger="click" data-event-name="private-modules-nav-link">npm private modules</a>
+      <a href="https://www.npmjs.com/enterprise">npm Enterprise</a>
+      <a href="https://docs.npmjs.com/">documentation</a>
+      <a href="http://blog.npmjs.org/?__hstc=72727564.872cac56c0626a62c63b9b349a3b66ae.1436776253694.1436776253695.1436781528238.2&__hssc=72727564.4.1436781528238&__hsfp=2444101443">blog</a>
+      <a href="https://www.npmjs.com/npm-weekly">npm weekly</a>
+      <a href="https://www.npmjs.com/jobs">jobs</a>
+      <a href="https://www.npmjs.com/support">support</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+      <a href="https://www.npmjs.com/" id="npm-logo"><img src="./grunt-contrib-htmlmin_files/npm-logo.svg" alt="npm logo"></a>
+
+      <div id="user-info" class="anonymous">
+          <a href="https://www.npmjs.com/login"><img src="./grunt-contrib-htmlmin_files/wombat-avatar-small.png"></a>
+          <ul class="single">
+            <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+          </ul>
+
+      </div>
+
+      <form id="npm-search" action="https://www.npmjs.com/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+        <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+        <input name="q" value="" type="search" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" autocomplete="off">
+        <input type="submit" id="site-search-submit">
+      </form>
+
+    </div>
+  </header>
+
+  <div class="container content">
+    
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a href="./grunt-contrib-htmlmin_files/grunt-contrib-htmlmin.html" class="active">grunt-contrib-htmlmin</a>
+      <i class="icon-public"></i>
+  </h1>
+  <p class="package-description">Minify HTML</p>
+
+  <form class="star">
+    <input type="hidden" name="name" value="grunt-contrib-htmlmin">
+    <input id="star-input" type="checkbox" name="isStarred" value="true">
+    <label for="star-input" class="icon-star"></label>
+    <div class="honey">
+      <label>If you are a robot, enter text here</label>
+      <input type="text" name="honey">
+    </div>
+    
+      <input type="hidden" name="crumb" value="fPTWFE1m52KLWTN478wf5r_jYqQzATCT4ZY6X3fBpt1">
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 class="package-name-redundant">grunt-contrib-htmlmin v0.4.0 <a href="https://travis-ci.org/gruntjs/grunt-contrib-htmlmin"><img src="./grunt-contrib-htmlmin_files/grunt-contrib-htmlmin.svg" class="badge"></a> <a href="https://ci.appveyor.com/project/gruntjs/grunt-contrib-htmlmin/branch/master"><img src="./grunt-contrib-htmlmin_files/master"></a></h1>
+<blockquote>
+<p class="package-description-redundant">Minify HTML</p>
+</blockquote>
+<h2 id="user-content-getting-started" class="deep-link"><a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#getting-started">Getting Started</a></h2>
+<p>This plugin requires Grunt <code>&gt;=0.4.0</code></p>
+<p>If you haven't used <a href="http://gruntjs.com/">Grunt</a> before, be sure to check out the <a href="http://gruntjs.com/getting-started">Getting Started</a> guide, as it explains how to create a <a href="http://gruntjs.com/sample-gruntfile">Gruntfile</a> as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:</p>
+<pre><code class="highlight shell"><pre class="editor editor-colors"><div class="line"><span class="source shell"><span>npm&nbsp;install&nbsp;grunt-contrib-htmlmin&nbsp;--save-dev</span></span></div></pre></code></pre>
+<p>Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:</p>
+<pre><code class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span>grunt</span><span class="meta delimiter method period js"><span>.</span></span><span>loadNpmTasks</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>grunt-contrib-htmlmin</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+<h2 id="user-content-htmlmin-task" class="deep-link"><a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#htmlmin-task">Htmlmin task</a></h2>
+<p><em>Run this task with the <code>grunt htmlmin</code> command.</em></p>
+<p><em>Issues with the output should be reported on the <code>htmlmin</code> <a href="https://github.com/kangax/html-minifier/issues/new">issue tracker</a>.</em></p>
+<h3 id="user-content-options" class="deep-link"><a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#options">Options</a></h3>
+<p>See the <code>html-minifier</code> <a href="https://github.com/kangax/html-minifier#options-quick-reference">options</a>.</p>
+<h4 id="user-content-example" class="deep-link"><a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#example">Example</a></h4>
+<pre><code class="highlight js"><pre class="editor editor-colors"><div class="line"><span class="source js"><span>grunt</span><span class="meta delimiter method period js"><span>.</span></span><span>initConfig</span><span class="meta brace round js"><span>(</span></span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;htmlmin</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;Task</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;dist</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;Target</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;options</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;Target&nbsp;options</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;removeComments</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;collapseWhitespace</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="constant language boolean true js"><span>true</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;files</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;Dictionary&nbsp;of&nbsp;files</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>dist/index.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>src/index.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;'destination':&nbsp;'source'</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>dist/contact.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>src/contact.html</span><span class="punctuation string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;dev</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line double-slash js"><span class="punctuation comment js"><span>//</span></span><span>&nbsp;Another&nbsp;target</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;files</span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="meta brace curly js"><span>{</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>dist/index.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>src/index.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>dist/contact.html</span><span class="punctuation string end js"><span>'</span></span></span><span class="keyword operator js"><span>:</span></span><span>&nbsp;</span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>src/contact.html</span><span class="punctuation string end js"><span>'</span></span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;&nbsp;</span><span class="meta brace curly js"><span>}</span></span></span></div><div class="line"><span class="source js"><span class="meta brace curly js"><span>}</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div><div class="line"><span class="source js"><span>&nbsp;</span></span></div><div class="line"><span class="source js"><span>grunt</span><span class="meta delimiter method period js"><span>.</span></span><span>registerTask</span><span class="meta brace round js"><span>(</span></span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>default</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta delimiter object comma js"><span>,</span></span><span>&nbsp;</span><span class="meta brace square js"><span>[</span></span><span class="string quoted single js"><span class="punctuation string begin js"><span>'</span></span><span>htmlmin</span><span class="punctuation string end js"><span>'</span></span></span><span class="meta brace square js"><span>]</span></span><span class="meta brace round js"><span>)</span></span><span class="punctuation terminator statement js"><span>;</span></span></span></div></pre></code></pre>
+<h2 id="user-content-release-history" class="deep-link"><a href="https://www.npmjs.com/package/grunt-contrib-htmlmin#release-history">Release History</a></h2>
+<ul>
+<li>2015-02-06   v0.4.0   Updated to <code>htmlmin</code> 0.7.0.</li>
+<li>2014-05-05   v0.3.0   Drop node.js 0.8 support. Updated to htmlmin 0.6.0.</li>
+<li>2014-02-09   v0.2.0   Rewrite task. Drop concat support.</li>
+<li>2013-04-06   v0.1.3   Fail target when minify encounters an error.</li>
+<li>2013-04-05   v0.1.2   Update html-minifier which fixes IE conditional comments and prefixed HTML elements <code>&lt;ng-include&gt;</code> <code>&lt;ng:include&gt;</code>.</li>
+<li>2013-02-18   v0.1.1   First official release for Grunt 0.4.0.</li>
+<li>2013-01-30   v0.1.1rc7   Updating grunt/gruntplugin dependencies to rc7. Changing in-development grunt/gruntplugin dependency versions from tilde version ranges to specific versions.</li>
+<li>2013-01-09   v0.1.1rc5   Updating to work with grunt v0.4.0rc5. Switching to this.filesSrc api.</li>
+<li>2012-11-01   v0.1.0   Initial release.</li>
+</ul>
+<hr>
+<p>Task submitted by <a href="http://github.com/sindresorhus">Sindre Sorhus</a></p>
+<p><em>This file was generated on Fri Feb 06 2015 17:15:43.</em></p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input type="text" value="npm i grunt-contrib-htmlmin" readonly="">
+    </div>
+
+	<ul class="box">
+
+      <li class="last-publisher">
+        <a href="https://www.npmjs.com/~sindresorhus">
+          <img src="./grunt-contrib-htmlmin_files/d36a92237c75c5337c17b60d90686bf9" alt="sindresorhus">
+          <span>sindresorhus</span>
+        </a>
+          published
+          <span data-date="2015-02-06T10:21:37.379Z" data-date-format="relative">5 months ago</span>
+      </li>
+
+    <li>
+      <strong>0.4.0</strong>
+      is the latest
+        of 9 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/gruntjs/grunt-contrib-htmlmin">github.com/gruntjs/grunt-contrib-htmlmin</a>
+      </li>
+
+
+      <li>
+          <a href="http://opensource.org/licenses/MIT">MIT</a>
+        <span> license</span>
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+        <a href="https://www.npmjs.com/package/grunt-contrib-htmlmin/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+          <a href="https://www.npmjs.com/~sindresorhus" rel="tipsy" original-title="sindresorhus">
+            <img src="./grunt-contrib-htmlmin_files/d36a92237c75c5337c17b60d90686bf9" alt="sindresorhus">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/~tkellen" rel="tipsy" original-title="tkellen">
+            <img src="./grunt-contrib-htmlmin_files/2dfa93e54912cd2e9b2506079879ff26" alt="tkellen">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/~cowboy" rel="tipsy" original-title="cowboy">
+            <img src="./grunt-contrib-htmlmin_files/978a1a2a80394217a0e39c84f07a7c16" alt="cowboy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/~shama" rel="tipsy" original-title="shama">
+            <img src="./grunt-contrib-htmlmin_files/5211ea711bb06482530172f77732f61a" alt="shama">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/~vladikoff" rel="tipsy" original-title="vladikoff">
+            <img src="./grunt-contrib-htmlmin_files/13b097b3a9dfacddbda2dff787593452" alt="vladikoff">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/~jmeas" rel="tipsy" original-title="jmeas">
+            <img src="./grunt-contrib-htmlmin_files/26c5216d6f7041fdd037197d03bb550d" alt="jmeas">
+          </a>
+        </li>
+
+
+    </ul>
+
+  <h3>Stats</h3>
+  <ul class="box">
+
+      <li>
+        <strong class="pretty-number daily-downloads">2,755</strong>
+        downloads in the last day
+      </li>
+      <li>
+        <strong class="pretty-number weekly-downloads">52,286</strong>
+        downloads in the last week
+      </li>
+      <li>
+        <strong class="pretty-number monthly-downloads">218,215</strong>
+        downloads in the last month
+      </li>
+
+      <li id="issues" data-ghapi="https://api.github.com/repos/gruntjs/grunt-contrib-htmlmin">
+        <span class="original" style="display: none;">Have an issue? <a href="https://github.com/gruntjs/grunt-contrib-htmlmin/issues">No open issues</a></span>
+          <span class="enhanced" style="">
+            <a href="https://github.com/gruntjs/grunt-contrib-htmlmin/issues">No open issues</a> on GitHub
+          </span>
+      </li>
+
+      <li id="pull_requests" style="">
+        <a href="https://github.com/gruntjs/grunt-contrib-htmlmin/pulls">No open pull requests</a> on GitHub
+      </li>
+
+  </ul>
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="https://www.npmjs.com/browse/keyword/optimize">optimize</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/compress">compress</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/minify">minify</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/min">min</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/html">html</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/gruntplugin">gruntplugin</a>
+  </p>
+
+  <h3>Dependencies (3)</h3>
+  <p class="list-of-links">
+          <a href="https://www.npmjs.com/package/pretty-bytes">pretty-bytes</a>,
+          <a href="https://www.npmjs.com/package/html-minifier">html-minifier</a>,
+                <a href="https://www.npmjs.com/package/chalk">chalk</a>
+  </p>
+
+    <h3><a href="https://www.npmjs.com/browse/depended/grunt-contrib-htmlmin">Dependents</a></h3>
+    <p class="list-of-links dependents">
+
+          <a href="https://www.npmjs.com/package/section">section</a>,
+        
+          <a href="https://www.npmjs.com/package/generator-admo">generator-admo</a>,
+        
+          <a href="https://www.npmjs.com/package/knockout-tools">knockout-tools</a>,
+        
+          <a href="https://www.npmjs.com/package/bhargav">bhargav</a>,
+        
+          <a href="https://www.npmjs.com/package/harika">harika</a>,
+        
+          <a href="https://www.npmjs.com/package/simply-static">simply-static</a>,
+        
+          <a href="https://www.npmjs.com/package/generator-chrome-extension-simple">generator-chrome-extension-simple</a>,
+        
+          <a href="https://www.npmjs.com/package/couch-cli">couch-cli</a>,
+        
+          <a href="https://www.npmjs.com/package/grunt-html5-boilerplate">grunt-html5-boilerplate</a>,
+        
+          <a href="https://www.npmjs.com/package/hazdev-template">hazdev-template</a>,
+        
+          <a href="https://www.npmjs.com/package/wowbuilder">wowbuilder</a>,
+        
+          <a href="https://www.npmjs.com/package/torrent-bot">torrent-bot</a>,
+        
+          <a href="https://www.npmjs.com/package/fabs">fabs</a>,
+        
+          <a href="https://www.npmjs.com/package/generator-app-cordova">generator-app-cordova</a>,
+        
+          <a href="https://www.npmjs.com/package/sourcejs">sourcejs</a>,
+        
+          <a href="https://www.npmjs.com/package/grunt-ui">grunt-ui</a>,
+        
+          <a href="https://www.npmjs.com/package/frank-styleguide">frank-styleguide</a>,
+        
+          <a href="https://www.npmjs.com/package/grunt-jskeleton">grunt-jskeleton</a>,
+        
+          <a href="https://www.npmjs.com/package/generator-adaptiveme">generator-adaptiveme</a>,
+        
+          <a href="https://www.npmjs.com/package/grunt-setup-conventions">grunt-setup-conventions</a>,
+        
+          <a href="https://www.npmjs.com/package/wix-gruntfile">wix-gruntfile</a>,
+                  <a href="https://www.npmjs.com/package/mortero">mortero</a>    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "grunt-contrib-htmlmin",
+      "description": "Minify HTML",
+      "url": "https://www.npmjs.com/package/grunt-contrib-htmlmin",
+      "keywords": "optimize,compress,minify,min,html,gruntplugin",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+  <div class="hiring-container" data-template="sidebar"><div class="ad">
+  <p>
+    <a href="http://www.nutanix.com/careers/current-openings/" title="Nutanix">Nutanix</a> is hiring.
+    <a class="quiet" href="https://www.npmjs.com/whoshiring">View more…</a>
+  </p>
+</div></div>
+
+</div>
+
+
+  </div>
+
+  <footer>
+
+    <div class="container">
+
+      <ul class="columnar">
+        <li>
+          <h3>You Need Help</h3>
+          <ul class="links">
+            <li><a href="https://docs.npmjs.com/">Documentation</a></li>
+            <li><a href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+            <li><a href="http://status.npmjs.org/?__hstc=72727564.872cac56c0626a62c63b9b349a3b66ae.1436776253694.1436776253695.1436781528238.2&__hssc=72727564.4.1436781528238&__hsfp=2444101443">Registry Status</a></li>
+            <li><a href="https://github.com/npm/newww/issues">Website Issues</a></li>
+            <li><a href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li><a href="https://www.npmjs.com/security">Security</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>About npm</h3>
+          <ul class="links">
+            <li><a href="https://www.npmjs.com/about">About npm, Inc</a></li>
+            <li><a href="https://www.npmjs.com/jobs">Jobs</a></li>
+            <li><a href="https://www.npmjs.com/private-modules">npm private modules</a></li>
+            <li><a href="http://blog.npmjs.org/?__hstc=72727564.872cac56c0626a62c63b9b349a3b66ae.1436776253694.1436776253695.1436781528238.2&__hssc=72727564.4.1436781528238&__hsfp=2444101443">Blog</a></li>
+            <li><a href="https://twitter.com/npmjs">Twitter</a></li>
+            <li><a href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <h3>Legal Stuff</h3>
+          <ul class="links">
+            <li><a href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+            <li><a href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+            <li><a href="https://www.npmjs.com/policies/npm-license">npm License</a></li>
+            <li><a href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+            <li><a href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+            <li><a href="https://www.npmjs.com/policies/trademark">Trademark Policy</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="container centered">
+      <a href="https://www.npmjs.com/" id="npm-loves-you">
+        npm loves you
+      </a>
+    </div>
+
+  </footer>
+  
+
+
+
+<!-- pid=26255 6537654942f9443c635c3fec1a18e4fb9ea362b1 https://www.npmjs.com www-9-west.internal.npmjs.com  -->
+<div class="autocomplete-suggestions" style="position: absolute; display: none; width: 533px; max-height: 400px; z-index: 9999;"></div></body></html>
