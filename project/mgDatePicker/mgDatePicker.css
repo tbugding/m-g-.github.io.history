@@ -1,0 +1,48 @@
+@charset "utf-8";
+.mgDatePicker{display: none; position: absolute; padding-bottom: 10px; top: 0; left: 0; border: 1px solid #2fa1e7; _box-shadow: 0 0 20px #666; width: 230px; background: #fff; z-index: 999;}
+.mgDatePicker_prev,.mgDatePicker_next{width: 20px; height: 20px; background: url(mgDatePicker-ico.png) no-repeat; position: absolute; top: 7px;}
+.mgDatePicker_prev{left: 10px;}
+.mgDatePicker_prev:hover{ background-position: 0 -20px;}
+.mgDatePicker_next{right: 10px; background-position: -20px 0;}
+.mgDatePicker_next:hover{ background-position: -20px -20px;}
+.mgDatePicker_box{width: 230px;}
+.mgDatePicker_tit{ width: 100%;height: 34px; font: 15px/34px microsoft yahei; color: #fff; text-align: center; background: #2fa1e7; cursor: default;}
+.mgDatePicker_titBtn{margin: 0 4px; cursor: pointer;}
+.mgDatePicker_titBtn:hover{color: #d5edfc;}
+.mgDatePicker_table{ border-collapse:collapse; text-align: center; margin:10px auto 0 auto;}
+.mgDatePicker_table th,.mgDatePicker_table td{ width: 29px; height: 29px; border: 1px solid #f0f0f0; color: #666;  font: normal 12px/29px microsoft yahei; cursor: default;}
+.mgDatePicker_table tbody td.mgDatePicker_filled{ cursor: pointer;}
+.mgDatePicker_table tbody td.mgDatePicker_disabled{ color: #ddd;}
+.mgDatePicker_table tbody td.mgDatePicker_filled:hover{background: #e0f3ff;}
+.mgDatePicker_table th{ height: 20px; line-height: 20px; color: #666; border-top: 0;}
+.mgDatePicker_table tbody td span{ display: block; cursor: pointer; margin:1px; width: 27px; height: 27px;}
+.mgDatePicker_table tbody td span:hover{ height: 24px; border-bottom: 3px solid #ff6501;}
+.mgDatePicker_table .mgDatePicker_orange{ color: #ff791d;}
+.mgDatePicker_table .mgDatePicker_current{ color: #2fa1e7;;}
+.mgDatePicker_today{ background: #a7d9f8;}
+.mgDatePicker_today:hover{ background: #259fea !important; color: #fff;}
+.mgDatePicker_monthList{ padding: 10px 6px;}
+.mgDatePicker_monthList li{ width: 33.3%; text-align: center; cursor: pointer; display: inline-block; margin: 1px 0; padding: 6px 0; font:14px/22px microsoft yhaei;}
+.mgDatePicker_monthList li:hover{ background: #ddd;}
+.mgDatePicker_monthList li.active{ background: #259fea; color: #fff;}
+.mgDatePicker_confirm{ text-align: center; margin:0 10px 10px 10px; cursor: pointer;}
+.mgDatePicker_confirm:hover{ color: #259fea}
+.mgDatePicker_inputYear{ margin-top: 10px; text-align: center;}
+.mgDatePicker_inputYear input{ border: 1px solid #ddd; width: 80px; font-size: 14px; text-align: center; line-height: 26px;}
+.mgDatePicker_timeWrap{ height: 22px; line-height: 22px; width: 210px; margin: 10px auto 0 auto;}
+.mgDatePicker_timeConfirm{ float: right; font:14px/22px STHeiTi, arial,\5b8b\4f53,\5FAE\8F6F\96C5\9ED1,sans-serif; text-decoration: none; color:#2fa1e7;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

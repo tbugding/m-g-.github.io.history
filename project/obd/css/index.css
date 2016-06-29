@@ -1,0 +1,169 @@
+/*首页样式*/
+.index_font01{ font: 1.4em/1.75em 'microsoft yahei';
+color: #666}
+.index_t1{font:44px/50px microsoft yahei; color:#555;}
+.index_t2{font:22px/38px microsoft yahei; color:#666; margin-top: 27px;}
+
+/*顶部banner*/
+.banner{ }
+.banner_slogan{ height: 287px; /*_background: url(../img/index_banner_top.png) center top no-repeat;*/ position: relative; z-index: 2; text-align: center;}
+.banner_buy{ display: block; width: 230px; height: 60px; background: url(../img/index_btn01.png); font: 1.75em/60px 'microsoft yahei'; text-align: center; margin-top:1.2em; text-decoration: none; color: #fff; position: relative; z-index: 2}
+.banner_buy:hover{background-position: 0 -60px;}
+.banner_buy:active{background-position: 0 -120px;}
+.banner_bg{ position: relative;  bottom:0; max-width: 1890px; _width:100%;}
+.banner_bg img{ width: 100%;}
+.banner_t1{font:50px/100px microsoft yahei; color:#35bdb2; margin:0}
+.banner_t2{font:35px/72px microsoft yahei; color:#333; margin:-10px 0 0 0;}
+.banner_t3{font:18px/50px microsoft yahei; color:#999; margin:0}
+
+/*板块1-App链接*/
+.index_b1_t{ height: 118px; /*_background: url(../img/index_t01.png) center top no-repeat;*/ margin-top: 6em; text-align: center;}
+.index_dlWrap{ height: 225px;}
+.index_dlBtn{ position: absolute; width: 220px; height: 66px;font: 1.3em/66px Verdana, Geneva, 'microsoft yahei', sans-serif; color: #fff; text-decoration: none; top: 50%; left: 50%; margin-top: -33px;}
+.index_dlBtn span{font-size: 0.9em; vertical-align: 1px; font-family: microsoft yahei;}
+.index_dlAndroid{ background: url(../img/index_btn_android.png); margin-left: -250px; text-indent: 70px;}
+.index_dlIphone{ background: url(../img/index_btn_iphone.png); margin-left: 30px; text-indent: 90px;}
+.qrCode_IOS{ position: absolute; border: 1px solid #ddd; padding-bottom: 2px; background: #fff; left: 50%; margin-left: 280px; margin-top: 10px; display: none;}
+.index_dlAndroid:hover,.index_dlIphone:hover{ background-position:0 -66px;}
+.index_dlAndroid:active,.index_dlIphone:active{ background-position:0 -132px;}
+
+/*板块2-360全车体检*/
+.index_b2_top{ padding: 7em 0 0 7em;}
+.index_b2_top .b1{}
+.index_b2_top .b2{ width: 744px; height: 177px; /*_background: url(../img/index_t02.png) ;*/margin-left: 3.125em;}
+.index_b2_list{ margin:0; margin-top: 4.56em; margin-left: 3em; width: 520px; list-style: none; _padding-left: 0;}
+.index_b2_list li{ float: left; width: 162px; height: 180px;}
+.index_b2_list i{ display: block; width: 101px; height: 101px; background-image: url(../img/index_icos.png); margin:0 auto; }
+.index_b2_list .i1{}
+.index_b2_list .i2{ background-position: -120px 0;}
+.index_b2_list .i3{ background-position: -240px 0;}
+.index_b2_list .i4{ background-position: -360px 0;}
+.index_b2_list .i5{ background-position: -480px 0;}
+.index_b2_list .i6{ background-position: -600px 0;}
+.index_b2_list .i7{ background-position: -720px 0;}
+.index_b2_list .i8{ background-position: -840px 0;}
+.index_b2_list .i9{ background-position: -960px 0;}
+.index_b2_list p{ text-align: center; font-family: 'microsoft yahei'; color: #666;}
+.index_b2_img{ width: 511px; position: absolute; bottom: 0; right: 6.6em;}
+
+/*板块3-油耗分析*/
+.index_b3_img{ width: 45%;}
+.index_b3_img img{ margin: 8.25em 0 1.2em 4.2em;}
+.index_b3_right{ width: 55%;}
+.index_b3_right .b1{ width: 170px; height: 170px; margin: 7.5em auto 0 auto;}
+.index_b3_right .b2{ width: 630px; height: 188px; /*_background: url(../img/index_t03.png);*/ margin-top: 1.3em; padding: 0;}
+.index_b3_list{ margin:0; margin-top: 4.56em; margin-left: 4em; list-style: none;}
+.index_b3_list li{ float: left; width: 290px; height: 154px; overflow: hidden;}
+.index_b3_list i{ display: block; width: 101px; height: 101px; background-image: url(../img/index_icos.png); margin:0 auto; float: left;}
+.index_b3_list .i1{ background-position: 0 -120px;}
+.index_b3_list .i2{ background-position: -120px -120px;}
+.index_b3_list .i3{ background-position: -240px -120px;}
+.index_b3_list .i4{ background-position: -360px -120px;}
+.index_b3_list p{ text-align: center; font-family: 'microsoft yahei'; color: #666; float: left; line-height: 101px; margin:0 0 0 1.5em;}
+
+/*板块4-优化驾驶行为*/
+.index_b4_img{ width: 662px; height: 100%; position: absolute; bottom: 0; right: 0;}
+.index_b4_img img{ position: absolute; bottom: 0; right: 0;}
+.index_b4_right{ width: 618px;}
+.index_b4_right .b1{ width: 170px; height: 170px; margin: 7.5em auto 0 auto;}
+.index_b4_right .b2{ width: 556px; height: 190px; /*_background: url(../img/index_t04.png);*/ margin-top: 1.3em;}
+.index_b4_list{ margin:0; margin-left: 30px; margin-top: 4.56em; list-style: none;}
+.index_b4_list li{ float: left; width: 250px; height: 154px; overflow: hidden;}
+.index_b4_list i{ display: block; width: 101px; height: 101px; background-image: url(../img/index_icos.png); margin:0 auto; float: left;}
+.index_b4_list .i1{ background-position: 0 -240px;}
+.index_b4_list .i2{ background-position: -120px -240px;}
+.index_b4_list .i3{ background-position: -240px -240px;}
+.index_b4_list .i4{ background-position: -360px -240px;}
+.index_b4_list p{ text-align: center; font-family: 'microsoft yahei'; color: #666; float: left; line-height: 101px; margin:0 0 0 1.5em;}
+
+
+/*板块5-超酷便捷显示*/
+.index_b5_img{ width: 55%;}
+.index_b5_img img{ margin: 8em 0 0 0;}
+.index_b5_right{ width: 45%; height: 100%;}
+.index_b5_right .b1{ width: 170px; height: 170px; margin: 8em 9em 0;}
+.index_b5_right .b2{ position: absolute; right: 2em; width: 604px; height: 216px; /*_background: url(../img/index_t05.png);*/ margin-top: 1.5em;}
+.index_b5_list{ position: absolute; top: 610px; padding: 0 ;right: 3em; list-style: none;}
+.index_b5_list li{ float: left; width: 250px; height: 154px; overflow: hidden;}
+.index_b5_list i{ display: block; width: 101px; height: 101px; background-image: url(../img/index_icos.png); margin:0 auto; float: left;}
+.index_b5_list .i1{ background-position: 0 -360px;}
+.index_b5_list .i2{ background-position: -120px -360px;}
+.index_b5_list .i3{ background-position: -240px -360px;}
+.index_b5_list .i4{ background-position: -360px -360px;}
+.index_b5_list p{ text-align: center; font-family: 'microsoft yahei'; color: #666; float: left; line-height: 86px; margin:0 0 0 1.5em;}
+
+/*板块6-卫士盒子*/
+.index_b6{height: 930px; background: #35bdb2;}
+.index_b6_left{ width: 100%; height: 930px; position: absolute; top: 0; left: 0; background: url(../img/index_pic06_left.png) left center no-repeat;}
+.index_b6_right{ width: 100%; height: 930px; position: absolute; top: 0; left: 0; background: url(../img/index_pic06_right.png) right center no-repeat;}
+.index_b6_main{ position: relative; z-index: 2; _background: #35bdb2; height: 100%;}
+.index_b6_main .b1{ width: 1128px; height: 168px; /*_background: url(../img/index_t06.png) center bottom no-repeat;*/ padding-top: 75px;}
+.index_b6_main .b2{ width: 1280px; height: 542px; background: url(../img/index_pic06.png); margin-top: 50px;}
+.index_b6_main .b1 h2{ font: 54px/60px microsoft yahei; color: #fff; margin: 0}
+.index_b6_main .b1 p{ font: 22px/40px microsoft yahei; color: #fff; margin: 1.2em 0 0 0}
+
+/*板块7-汽车和手机*/
+.index_b7{ width: 1280px; height: 640px; /*_background: url(../img/index_pic07.jpg);*/ margin-top: 7.75em;}
+
+.index_b7 ol{ list-style: none; padding: 0;}
+.index_b7 ol li{ width: 27%; float: left; font: 28px microsoft yahei; color: #333;  *width: 26.5%;}
+.index_b7 ol li p{color: #0299fd; margin: 0 0 14px 0;}
+
+/*板块8-听听用户的心声*/
+.index_b8{ height: 862px; background: #f1f4f7;}
+.index_b8_inner{ height: 100%; background: #f1f4f7;}
+.index_b8_tit{ height: 50px; /*_background: url(../img/index_t07.png) center bottom no-repeat;*/ padding: 60px 0 0 0; margin: 0;}
+.index_b8_list{ width: 94%; list-style: none; padding-left: 0; margin-top: 6em;}
+.index_b8_list li{ width: 33.333%; width: 33.1%; float: left;}
+.index_b8_list li img{ display: block; margin: 0 auto; }
+.index_b8_list li h3{ font: 1.5em/3em 'microsoft yahei'; color: #555; text-align: center; margin: 0;}
+.index_b8_list li h3 em{ font-size: 1.25em; margin-right: .5em; font-style: normal;}
+.index_b8_list li .p1{ font: 0.875em 'microsoft yahei'; color: #8695ab; text-align: center; margin: 0; }
+.index_b8_list li .p2{ width: 90%; background: #35bdb2;  margin-top: 1em; position: relative;}/*border-radius: 30px;*/
+.index_b8_list li .p2 p{ padding: 1em 1.2em; font: 1.125em/1.7em 'microsoft yahei'; color: #fff; position: relative; z-index: 2;}
+.cn_tl,.cn_tr,.cn_bl,.cn_br{ display: block; width: 29px; height: 29px; position: absolute; background: url(../img/index_corner.png);}
+.cn_tl{ top: 0; left: 0; background-position: 0 0;}
+.cn_tr{ top: 0; right: 0; background-position: 0 -30px;}
+.cn_bl{ bottom: 0; left: 0; background-position: 0 -90px;}
+.cn_br{ bottom: 0; right: 0; background-position: 0 -60px;}
+
+/*板块9-满满安全感*/
+.index_b9_tit{ height: 50px; /*_background: url(../img/index_t08.png) center bottom no-repeat;*/ padding: 70px 0 0 0; margin: 0;}
+.index_b9_list{ height: 696px; background: url(../img/index_pic08.jpg) center top no-repeat; margin-top: 84px; margin-bottom: 70px;}
+.index_b9_list .b1,.index_b9_list .b3{ width: 400px; height: 696px; float: left; position: relative;}
+.index_b9_list .b2{ width: 480px; height: 696px; float: left; position: relative;}
+.index_b9_list ul{ position: absolute; list-style: none;}
+.index_b9_list ul li{font: 1.125em/2em 'microsoft yahei'; text-indent: 2.375em; background: url(../img/index_ico.png) left 0.6em no-repeat; color: #555e64;}
+.index_b9_list .b1 ul{ top: 335px; left: 110px;}
+.index_b9_list .b2 ul{ top: 320px; left: 120px;}
+.index_b9_list .b3 ul{ top: 322px; left: 70px;}
+.index_b9_list .b2 ul li{font: 1.375em/2em 'microsoft yahei'; text-indent: 2em; background: url(../img/index_ico2.png) left 0.5em no-repeat;}
+.index_b9_list .btnBuy{ width: 246px; height: 80px; background: url(../img/index_btn02.png); position: absolute; font: 1.625em/80px 'microsoft yahei'; text-align: center; text-decoration: none; color: #fff;}
+.index_b9_list .btnBuy:hover{ background-position: 0 -80px;}
+.index_b9_list .btnBuy:active{ background-position: 0 -160px;}
+.index_b9_list .btnWait{ width: 246px; height: 80px; background: url(../img/index_btn02.png) 0 -240px; position: absolute; font: 1.625em/80px 'microsoft yahei'; text-align: center; text-decoration: none; color: #fff;}
+.index_b9_list .b1 .btnBuy,.index_b9_list .b1 .btnWait{ bottom: 77px; left: 85px;}
+.index_b9_list .b2 .btnBuy,.index_b9_list .b2 .btnWait{ bottom: 77px; left: 120px;}
+.index_b9_list .b3 .btnWait{ bottom: 77px; left: 60px;}
+
+/*板块10-告诉小伙伴们*/
+.index_b10_tit{ height: 50px; /*_background: url(../img/index_t09.png) center bottom no-repeat;*/ padding: 100px 0 0 0; margin: 0;}
+.index_b10_count{ text-align: center; font: 1.5em/3em 'microsoft yahei'; color: #7b8286;}
+.index_b10_count em{margin: 0 .5em; font-size: 1.5em; color: #f94972; font-style: normal; vertical-align: -6px;}
+.index_b10_list{ width: 94%; list-style: none; margin: 120px auto 150px auto; padding: 0;}
+.index_b10_list li{ width: 25%; *width: 24.5%; float: left; text-align: center;}
+.index_b10_list .ico{ display: block; width: 170px; height: 170px; background: url(../img/index_btn_share.png); margin: 0 auto;}
+.index_b10_list .ico01{ background-position: 0 0;}
+.index_b10_list .ico01:hover{ background-position: -200px 0;}
+.index_b10_list .ico01:active{ background-position: -400px 0;}
+.index_b10_list .ico02{ background-position: 0 -200px;}
+.index_b10_list .ico02:hover{ background-position: -200px -200px;}
+.index_b10_list .ico02:active{ background-position: -400px -200px;}
+.index_b10_list .ico03{ background-position: 0 -400px;}
+.index_b10_list .ico03:hover{ background-position: -200px -400px;}
+.index_b10_list .ico03:active{ background-position: -400px -400px;}
+.index_b10_list .ico04{ background-position: 0 -600px;}
+.index_b10_list .ico04:hover{ background-position: -200px -600px;}
+.index_b10_list .ico04:active{ background-position: -400px -600px;}
+.index_b10_list p{ font: 1.25em/3em 'microsoft yahei'; color: #7b8286;}
+.index_qrCode{ position: absolute; top: -260px; left: 50%; margin-left: -101px;}

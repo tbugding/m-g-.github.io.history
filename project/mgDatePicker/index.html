@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mgDatePicker</title>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="mgDatePicker.css">
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="mgDatePicker.js"></script>
+    <style type="text/css">
+        body {
+            /*margin: 20px;*/
+            /*font-family: microsoft yahei;*/
+            color: #333;
+        }
+
+        input {
+            width: 240px;
+            height: 30px;
+            border: 1px solid #ddd;
+            padding: 0 5px;
+            line-height: 30px;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+
+        .label{ display: inline-block; width: 170px; text-align: right;}
+
+        .code{
+            color: #ccc;
+        }
+
+        .link{ color: #2fa1e7; text-decoration: none;}
+        .link:hover{ color: #4db0ed; }
+
+        #pageTab_content{
+            padding: 80px 0;
+            /*text-align: center;*/
+        }
+
+        .main{ width: 960px;  margin: 0 auto;}
+    </style>
+</head>
+<body>
+<section class="page-header">
+    <h1 class="project-name">mgDatePicker</h1>
+    <h2 class="project-tagline">jQuery时间选择插件</h2>
+    <a href="https://github.com/M-G-/mgDatePicker" class="btn">View on GitHub</a>
+    <a href="https://github.com/M-G-/mgDatePicker/archive/master.zip" class="btn">Download .zip</a>
+</section>
+<div id="pageTab_content" class="main_padding">
+    <!--<h1>mgDatePicker jQuery时间选择插件 DEMO</h1>-->
+    <!--<p>-->
+        <!--github: <a class="link" href="https://github.com/M-G-/mgDatePicker" target="_blank">https://github.com/M-G-/mgDatePicker</a>-->
+    <!--</p><br>-->
+    <div class="main">
+        <span class="label">默认：</span>
+        <input class="infoCont_input2" type="text" data-datepicker value="2016-07-01"/>
+        <span class="code">&lt;input type="text" data-datepicker value="2016-07-01"/&gt;</span>
+        <br><br>
+
+        <span class="label">位置偏移：</span>
+        <input class="infoCont_input2" type="text" data-datepicker="top:-33,left:254"/>
+        <span class="code">&lt;input type="text" data-datepicker="top:-33,left:254"/&gt;</span>
+        <br><br>
+        <span class="label">限制时间范围：</span>
+        <input class="infoCont_input2" type="text" data-datepicker="from:2016-6-4,to:now"/>
+        <span class="code">&lt;input type="text" data-datepicker="from:2016-6-4,to:now"/&gt;</span>
+        <br><br>
+        <span class="label">选择时间：</span>
+        <input class="infoCont_input2" type="text" data-datepicker="type:time"/>
+        <span class="code">&lt;input type="text" data-datepicker="type:time"/&gt;</span>
+        <br><br>
+        <span class="label">选择日期和时间：</span>
+        <input class="infoCont_input2" type="text" data-datepicker="type:date-time"/>
+        <span class="code">&lt;input type="text" data-datepicker="type:date-time"/&gt;</span>
+    </div>
+
+</div>
+
+<script>
+    var datePicker = new mgDatePicker();
+
+    /*
+     *
+     * 只需要input 里有 data-datepicker 属性
+     * 然后 在页面加载的时候new mgDatePicker 就行了
+     * from  to  是可选时间范围
+     * top  left 是位置偏移量
+     * type:time 选择时间   type:date或者没有type 选择日期   type:date-time 选择时间和日期
+     *
+     */
+</script>
+
+</body>
+</html>

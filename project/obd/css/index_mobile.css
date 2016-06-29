@@ -1,0 +1,121 @@
+.mobileContent {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+	text-align: center;
+	line-height: 2.3em;
+	font-family: microsoft yahei;
+}
+h1,h2,h3,h4,h5,h6{ margin: 0;}
+/*input:focus,select:focus,a:focus{ outline: 0;}
+.cf:after,.cf:before{content: ''; display: table;}
+.cf:after{clear: both;}
+.cf{ *zoom:1;}
+.bc{ margin-left: auto; margin-right: auto;}
+.fl{float: left;}*/
+/*.block{ width: 100%; position: relative;}*/
+/*#animation01{position: relative;}*/
+/*.mobile_line{ border-bottom:1px solid #e2e2e2;}*/
+.mobile_img{vertical-align: bottom; display: block; width: 100%;}
+/*.btn{ margin-left: 8%; margin-right: 8%; width: 84%; display: block; border-radius: 3px; text-align: center; text-decoration: none; padding: 0.6em 0; font-size: 1.2em;}
+.btn2{ margin-left: 18%; margin-right: 18%; width: 64%; display: block; border-radius: 3px; text-align: center; text-decoration: none; padding: 0.6em 0; font-size: 1.5em;}
+.btn_normal{ background: #31c5b9; color: #fff;}*/
+
+#mobile{ width: 100%;}
+#activityClose{ width: 20px; height: 20px; padding: 5px; position: absolute; top: 0; right: 0; background: url(../img/mobile/activity_close.png) 5px 5px no-repeat;}
+#activityFixed{ width:63px; height: 55px ; position: fixed; background: url(../img/mobile/activity_ico.png); right: 10px; bottom: 10px; z-index: 10000;}
+
+.mobileBanner_logo{ width: 15%;  margin-top: 13%;}
+.mobileBanner_t1 {font-size: 28px ; line-height:60px; margin: 5px 0 0 0;  color:#35bdb2; font-weight: normal;}
+.mobileBanner_t2 {font-size: 19px ; line-height:30px; margin: 0;}
+.mobileBanner_t3 { font-size: 12px; color: #666; line-height: 24px; margin-top: 10%;}
+.mobileBanner_bg{ background-size: 130%;}
+.mobileBanner_bg_black{ display: none;}
+.mobileBanner_btn{ display: block; width: 47%; height: 40px; font: 16px/40px microsoft yahei; color: #fff; background: #0084ff; border-radius: 20px; text-decoration: none; margin: 20px auto;}
+
+.mobile_h2{font-size: 20px ; line-height:36px; font-weight: normal;}
+.mobile_h1{font-size: 22px ; line-height:40px; font-weight: normal;}
+.mobile_h2Text{ font: 14px/20px microsoft yahei; color: #666; margin:6px 0;}
+.mobile_dlBtnWrap{ float: left; width: 50%; margin: 30px 0 40px 0;}
+.mobile_dlBtnWrap img{ width: 86%;}
+
+.mobile_titWrap{ width: 90%; text-align: left;}
+.mobile_titLeft{ width: 23%; float: left; margin-top: 5px;}
+.mobile_titRight{ width: 77%; float: left;}
+.mobile_greenBox{ background: #1aa098; color: #fff; padding: 30px 0;}
+.mobile_greenBoxText{ width:90%; color:#fff; margin: 10px auto;}
+.mobile_greenBoxList{ list-style: none; padding: 0; margin: 0 auto;}
+.mobile_greenBoxList li{ width: 44%; height: 26px; border-radius: 13px; float: left; margin: 6% 3% 0 3%; background: #48b3ad; font: 12px/26px microsoft yahei; text-align: left;}
+.mobile_greenBoxList p{ height: 26px; vertical-align: top; display: inline-block; margin: 0; white-space:nowrap;}
+.mobile_greenBoxIco { width: 20px; height: 26px; background: url(../img/mobile/index_pic08_ico.png) 0 4px no-repeat; margin-left: 4px; display: inline-block;}
+.mobile_greenBoxIco.ico01{}
+.mobile_greenBoxIco.ico02{ background-position: 0 -26px;}
+.mobile_greenBoxIco.ico03{ background-position: 0 -55px;}
+.mobile_greenBoxIco.ico04{ background-position: 0 -85px;}
+.mobile_greenBoxIco.ico05{ background-position: 0 -116px;}
+.mobile_greenBoxIco.ico06{ background-position: 0 -146px;}
+.mobile_greenBoxIco.ico07{ background-position: 0 -176px;}
+.mobile_greenBoxIco.ico08{ background-position: 0 -205px;}
+.mobile_stepBox{ width: 72%; margin: 0 auto; list-style: none; padding: 0;}
+.mobile_stepBoxText{ display: inline-block;}
+.mobile_stepBox li{ margin-top: 20px;}
+.mobile_stepBox p{ margin: 0; text-align: left; line-height: 28px;}
+.mobile_stepBox .p1{ color: #0299fd;}
+.mobile_stepBox img { vertical-align:  top; margin-right: 10px;}
+.mobile_userBox{ background: #f1f4f7; padding: 30px 0 35px 0;}
+.mobile_userBox p{ margin: 0;}
+.mobile_userBoxBtns{ list-style: none; padding: 0; margin: 7% 0 5% 0;}
+.mobile_userBoxBtns li{ border-radius:50%; width: 18%; float: left;   border:2px solid #f1f4f7; box-sizing:border-box; margin-left: 9%; margin-top: 4%; -webkit-transition:all .6s; transition:all .6s;}
+.mobile_userBoxBtns li img{ width: 100%; display: block;}
+.mobile_userBoxBtns li.current{ width:26%;  border-color:#35bdb2; margin-top: 0; -webkit-transition:all .6s; transition:all .6s;}
+.mobile_userBoxTit{ color: #555; width: 86%; margin: 0 auto 7% auto;}
+.mobile_userBoxTit h3{ font:normal 16px/30px microsoft yahei;}
+.mobile_userBoxTit h3 em{ font-style: normal;}
+.mobile_userBoxTit p{ color: #8695ab;  font:normal 14px/24px microsoft yahei;}
+
+.mobile_userBoxText{ text-align: left;}
+.mobile_userBoxText{ width: 90%; background: #35bdb2; margin: 0 auto; position: relative; border-radius: 18px;}
+.mobile_userBoxText p{ padding: 1em 1.2em; font: 15px/1.7em 'microsoft yahei'; color: #fff; position: relative; z-index: 2;}
+
+
+.mobile_proList{ width: 90%; height: 122px; box-sizing:border-box; border:1px solid #e3e3e3; box-shadow: 0 0 5px #e3e3e3; margin-left:auto; margin-right: auto; margin-bottom: 12px;}
+.mobile_proList .left{ width: 40%; height: 100%; float: left;}
+.mobile_proList.b1 .left{ background: #0299fd;}
+.mobile_proList.b2 .left{ background: #44d8cc;}
+.mobile_proList.b3 .left{ background: #8b2ce4;}
+.mobile_proList .tit{ text-align: center; font:14px/36px microsoft yahei; color: #fff;}
+.mobile_proList .price{ width: 72px; height:72px; border-radius: 50%; margin: 0 auto; line-height: 72px; color: #fff; font-size: 24px;}
+.mobile_proList .price i{ font-style: normal; font-size:14px;}
+.mobile_proList.b1 .price{ background: #1877e1;}
+.mobile_proList.b2 .price{ background: #00cbb5;}
+.mobile_proList.b3 .price{ background: #6a16b9;}
+.mobile_proList .right{ width: 60%; height: 100%; float: left;}
+.mobile_proList .table{ width: 94%; margin: 6% 1% 1% 5%; height: 55%; font-size: 10px; line-height: 14px; color: #555e64; text-align: left; white-space:nowrap;-webkit-text-size-adjust:none;}
+.mobile_proList .table p{ margin: 0; text-indent: 14px; background: url(../img/mobile/index_pic10_ico.png) 0 0 no-repeat;}
+.mobile_proList .btn{ display: block; width: 54%; height: 28px;  border-radius: 14px; background: #35bdb2; text-align: center; font: 12px/28px microsoft yahei; color: #fff; margin: 0 auto; text-decoration: none;}
+.mobile_proList .btn.btnWait{ background: #ccc;}
+
+.mobile_share{ font:12px/30px microsoft yahei; color: #7b8286;}
+.mobile_share em{ font-size: 18px; font-style: normal; color: #f94972; text-align: center; margin: 0 7px;}
+.mobile_shareList{ width: 66%; list-style: none; padding: 0; margin: 26px auto 40px auto; font-size: 14px;}
+.mobile_shareList li{ width: 50%; float: left;}
+.mobile_shareList li a{ display: block; margin: 0 12%; width: 76%;}
+.mobile_shareList li img{ width: 100%;}
+.mobile_shareList p{ color: #7b8286; margin:0; white-space: nowrap;}
+
+
+/*微信下载按钮*/
+.weixinDL{display:block; width:50%; height:40px; border-radius:20px; background:#04c50d; margin:30px auto 40px auto; font:16px/40px microsoft yahei; color:#fff; text-algin:center; text-decoration: none;}
+
+@media all and (max-width: 320px){
+	.mobile_h1{font-size: 20px ; line-height:36px;}
+	.mobile_h2{font-size: 18px ; line-height:30px;}
+	.mobile_titLeft img{ width: 80%;}
+	.mobile_greenBoxList li{ width: 48%; margin: 5% 1% 0 1%;}
+	.mobile_greenBoxList p{ letter-spacing: -1px;}
+	.mobile_stepBox{ width: 80%; margin: 0 auto; list-style: none; padding: 0;}
+	.weixinDL{ height: 36px; font-size: 14px; line-height: 36px; border-radius: 18px;}
+}
+
+
+
