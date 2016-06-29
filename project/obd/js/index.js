@@ -72,7 +72,7 @@ $(function(){
 	function winResize(){
 
 		if(client.width<=720){
-			console.log('mobile')
+			//console.log('mobile')
 			oHeader.removeClass('header_pc header_pcHide');
 			oFullpage.removeClass('fullpage_pc').hide();
 			oMobile.removeClass('fullpage_pc').show();
@@ -85,7 +85,7 @@ $(function(){
 				$('#activityBannerPC').appendTo(oFullpage);
 			}
 		}else{
-			console.log('pc')
+			//console.log('pc')
 			oHeader.addClass('header_pc');
 			oFullpage.addClass('fullpage_pc').show();
 			oMobile.removeClass('fullpage_pc').hide();
